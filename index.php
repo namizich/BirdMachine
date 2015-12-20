@@ -6,7 +6,7 @@
 
 /* Load required lib files. */
 session_start();
-require_once('twitteroauth.php');
+require_once('twitteroauth/src/twitteroauth.php');
 require_once('config.php');
 
 /* If access tokens are not available redirect to connect page. */

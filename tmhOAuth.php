@@ -37,13 +37,13 @@ class tmhOAuth {
         // default timezone for requests
         'timezone'                   => 'UTC',
 
-        'use_ssl'                    => false,
-        'host'                       => 'localhost',
+        'use_ssl'                    => true,
+        'host'                       => 'api.twitter.com',
 
-        'consumer_key'               => '8fiQNPRVRAmRgrGqODIsMqSU3',
-        'consumer_secret'            => 'QBplH7Wv2yccLWPSUHV95s5hcRYrYMivxKxQQnAtfQioj434M4',
-        'user_token'                 => '4548498501-Vp2N2JWFDdxxkWM7eiF0jPvGwT3fL0fMesQqaJc',
-        'user_secret'                => 'wVoB8Vdwr4ONjyWmX08MjQZrhfaTIvyOBCro697YSjLIF',
+        'consumer_key'               => '',
+        'consumer_secret'            => '',
+        'user_token'                 => '',
+        'user_secret'                => '',
         'force_nonce'                => false,
         'nonce'                      => false, // used for checking signatures. leave as false for auto
         'force_timestamp'            => false,
