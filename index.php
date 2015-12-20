@@ -6,7 +6,7 @@
 
 /* Load required lib files. */
 session_start();
-require_once('twitteroauth/twitteroauth.php');
+require_once('twitteroauth.php');
 require_once('config.php');
 
 /* If access tokens are not available redirect to connect page. */
@@ -33,9 +33,9 @@ $content = $connection->get('account/verify_credentials');
 //include('html.inc');
 //$connection->post('statuses/destroy', array('id' => 373674877607088129));
                   /*
-			function makeShortURL($URLToConvert) { 
-			     $shortURL= file_get_contents("http://tinyurl.com/api-create.php?url=" . $URLToConvert); 
-			     return $shortURL; 
+			function makeShortURL($URLToConvert) {
+			     $shortURL= file_get_contents("http://tinyurl.com/api-create.php?url=" . $URLToConvert);
+			     return $shortURL;
 			}
 
 		$short=makeShortURL("http://www.facebook.com/pages/Dev_1/459610310773757?sk=app_278742425582313&app_data=tn%7Cmemphis%7Cdonate-fixed-checking&ref=ts");
@@ -52,7 +52,7 @@ $content = $connection->get('account/verify_credentials');
 //$params = array('media[]' => "{$image};type=image/jpeg;filename={$filename}" ,
          //   'status'   => 'my status');
 //$response =$connection->post('statuses/update_with_media', $params,true,true);
- 
+
 
 
 		/*$oauth_token=$access_token['oauth_token'];
@@ -89,20 +89,20 @@ $content = $connection->get('account/verify_credentials');
 
 /*$img='http://2.bp.blogspot.com/-gHMuO_huw0s/UjNEQl-fL_I/AAAAAAAAAWQ/HhqGo4MskrE/s320/srinu.jpg';
 $txt='hi....';
-$img = './'.$img; 
-$code = $connection->post('statuses/update_with_media', array( 
+$img = './'.$img;
+$code = $connection->post('statuses/update_with_media', array(
 'media[]' => "@{$img}",
  'status' => "$txt" ),
- true, // use auth 
+ true, // use auth
  true // multipart
- ); 
+ );
 
 echo $code;
  if ($code == 200){
  echo '<h1>Your image tweet has been sent successfully</h1>';
  }
 else{
- //tmhUtilities::pr($tmhOAuth->response['response']); 
+ //tmhUtilities::pr($tmhOAuth->response['response']);
 echo "sssssssss";
 } */
 
@@ -131,10 +131,10 @@ if($_GET){
 ?>
 
 <form method="post">
-	
+
 	<textarea name="tweettext" id="tweettext" rows="5" cols="50">Awesome art - http://yappyzealz.net/l/tn/memphis/d/awesome-art</textarea>
 	<input type="hidden" name="hiddentext" id="hiddentext" value="instweet" />
-    <input type="submit" value="Tweet" /> 
+    <input type="submit" value="Tweet" />
 </form>
 <?php
 
